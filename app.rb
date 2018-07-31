@@ -1,4 +1,6 @@
-require ‘sinatra’
+require 'sinatra'
+require_relative 'config/environment'
+
 class App < Sinatra::Base
 
 get ‘/name’ do
@@ -15,9 +17,7 @@ end
 
 end 
 
-require ‘sinatra’
-require_relative ‘./app.rb’
-run App
+
 
 
 
